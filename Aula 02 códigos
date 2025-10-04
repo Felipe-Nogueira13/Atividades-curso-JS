@@ -1,0 +1,205 @@
+/*const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+rl.question('Qual seu nome? ', (nome) => {
+console.log(`Olá, ${nome}!`);
+rl.question('Quantos anos você tem? ', (idade) => {
+console.log(`${nome}, você tem ${idade} anos.`);
+rl.close();
+});
+});*/
+
+
+//Switch case
+/*let diaSemana = 4;
+switch (diaSemana) {
+    case 1:
+        console.log('Domingo');
+        break;
+    case 2:
+        console.log('Segunda-feira');
+        break;
+    case 3:
+        console.log('Terça-feira');
+        break;
+    default:
+        console.log('Dia inválido');
+        break;
+
+}*/
+
+/*const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('Qual o N1? ', (N1) => {
+    rl.question('Qual o N2? ', (N2) => {
+        rl.question('\nQual operação voce deseja?\n\n \t1)Soma\n \t2)Subtração\n \t3)Multiplicação\n \t4)Divisão\n\n', (operacao) => {
+            const num1 = parseFloat(N1);
+            const num2 = parseFloat(N2);
+            const op = parseInt(operacao); // converte para número
+
+            switch (op) {
+                case 1:
+                    console.log('O resultado da soma é:', num1 + num2);
+                    break;
+                case 2:
+                    console.log('O resultado da subtração é:', num1 - num2);
+                    break;
+                case 3:
+                    console.log('O resultado da multiplicação é:', num1 * num2);
+                    break;
+                case 4:
+                    if (num2 === 0) {
+                        console.log('Erro: divisão por zero não é permitida.');
+                    } else {
+                        console.log('O resultado da divisão é:', num1 / num2);
+                    }
+                    break;
+                default:
+                    console.log('Operação inválida');
+                    break;
+            }
+            rl.close();
+        });
+    });
+});*/
+
+
+/*import { createInterface } from 'readline';
+const rl = createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+rl.question('Qual a N1? ', (N1) => {
+    rl.question('Qual a N2? ', (N2) => {
+        rl.question('Qual a N3? ', (N3) => {
+            rl.question('Qual a N4? ', (N4) => {
+                const num1 = parseFloat(N1);
+                const num2 = parseFloat(N2);
+                const num3 = parseFloat(N3);
+                const num4 = parseFloat(N4);
+                let media = (num1 + num2 + num3 + num4) / 4;
+                if (media >= 6) {console.log("\nO aluno esta aprovado");}
+                else { console.log("\nO aluno esta reprovado");}
+            rl.close();
+            });
+        });
+    });
+});*/
+
+
+
+/*import { createInterface } from 'readline';
+const rl = createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+rl.question('Qual a N1? ', (N1) => {
+    rl.question('Qual a N2? ', (N2) => {
+        rl.question('Qual a N3? ', (N3) => {
+            rl.question('Qual a N4? ', (N4) => {
+                rl.question('Qual o número total de aulas no semestre? ', (totalAulas) => {
+                    rl.question('Qual o número de faltas do aluno? ', (faltas) => {
+                        const num1 = parseFloat(N1);
+                        const num2 = parseFloat(N2);
+                        const num3 = parseFloat(N3);
+                        const num4 = parseFloat(N4);
+                        const total = parseInt(totalAulas);
+                        const faltasNum = parseInt(faltas);
+                        let media = (num1 + num2 + num3 + num4) / 4;
+                        let percentualFaltas = (faltasNum / total) * 100;
+                        let limiteFaltas = 25;
+                        if (percentualFaltas >= limiteFaltas) {
+                            console.log("\nO aluno esta reprovado por falta!");
+                        } else if (media >= 6) {
+                            console.log("\nO aluno está aprovado!");
+                        } else {
+                            console.log("\nO aluno está reprovado por nota!");
+                        }
+                    rl.close();
+                    });
+                });
+            });
+        });
+    });
+});*/
+
+/*import { createInterface } from 'readline';
+const rl = createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+rl.question('\nCadastre o seu ID: ', (ID_cadastro) => {
+    rl.question('\nCadastre o sua senha: ', (senha_cadastro) => {
+        console.log("\nAgora realize seu login!\n")
+        rl.question('\nColoque seu ID: ', (ID_login) => {
+            rl.question('\nColoque sua senha: ', (senha_login) => {
+                if (ID_cadastro != ID_login) {
+                    console.log("\nLogin ou senha invalidos! Tente Novamente!");
+                } else if(senha_cadastro != senha_login) {
+                    console.log("\nLogin ou senha invalidos! Tente Novamente!");
+                } else {
+                    console.log("\nLogin realizado com sucesso!");
+                }
+                rl.close();
+            });
+        });
+    });
+})*/
+
+/*console.log("\nContagem regressiva\n")
+for (let i = 10; i >= 0; i--) {
+
+    console.log(i);
+}
+
+for (let i = 0; i <= 20; i += 2) {
+    console.log(i);
+}
+
+for (let i = 1; i <= 20; i += 2) {
+    console.log(i);
+}*/
+
+/*import { createInterface } from 'readline';
+
+const rl = createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('\nCadastre o seu ID: ', (ID_cadastro) => {
+    rl.question('\nCadastre a sua senha: ', (senha_cadastro) => {
+        console.log("\nAgora realize seu login!\n");
+
+        let tentativas = 0;
+
+        function tentarLogin() {
+            if (tentativas >= 3) {
+                console.log("\nAcesso negado por excesso de tentativas");
+                rl.close();
+                return;
+            }
+
+            rl.question('\nColoque seu ID: ', (ID_login) => {
+                rl.question('\nColoque sua senha: ', (senha_login) => {
+                    if (ID_login === ID_cadastro && senha_login === senha_cadastro) {
+                        console.log("\nLogin realizado com sucesso!");
+                        rl.close();
+                    } else {
+                        tentativas++;
+                        console.log("\nLogin ou senha inválidos! Tente novamente!");
+                        tentarLogin(); // chama novamente para nova tentativa
+                    }
+                });
+            });
+        }
+
+        tentarLogin(); // inicia as tentativas de login
+    });
+});*/
