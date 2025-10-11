@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação e Interação com JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro Simples</h1>
+
+        <form id="cadastroForm">
+            <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required oninput="validarFormulario()">
+                <p id="mensagemErro" class="mensagem-status"></p>
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" required oninput="validarFormulario()">
+                <p id="mensagemErroSenha" class="mensagem-status"></p>
+            </div>
+
+            <div class="input-group">
+                <label for="confirmarSenha">Confirmar Senha:</label>
+                <input type="password" id="confirmarSenha" required oninput="validarFormulario()">
+                <p id="mensagemErroConfirmacao" class="mensagem-status"></p>
+            </div>
+
+            <button class="button" type="submit" id="btnEnviar" disabled>Enviar cadastro</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+link -> C:\Users\D18_11\Documents\aula03\aula06teste\index.html
