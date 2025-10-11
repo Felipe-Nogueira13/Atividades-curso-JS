@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+    border: 2px solid #ccc;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #333;
+    width: 300px;
+    min-height: 400px; 
+    background-color: white; 
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #80dde4;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: #f80000;
+    transform: translateY(-1px);
+}
+
+.button:enabled:hover {
+    background-color: green;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.mensagem-status {
+    margin-top: 5px;
+    font-size: small;
+    height: 1.2em;
+    min-height: 1.2em; 
+}
+
+.erro {
+    color: #f80000;
+    font-weight: bold;
+}
+
+.sucesso {
+    color: green;
+    font-weight: bold;
+}
+
+link -> C:\Users\D18_11\Documents\aula03\aula06teste\style.css
